@@ -21,12 +21,17 @@
         <activity android:name=".SecondActivity" />
         <activity android:name=".ThirdActivity">
             <intent-filter>
-                <action android:name="com.whu.faithfish.ACTION_START"/>
-                <category android:name="com.whu.faithfish.MY_CATEGORY"/>
-                <category android:name="android.intent.category.DEFAULT"/><!--必须包括默认的category
-                否则不会找到-->
+                <action android:name="com.whu.faithfish.ACTION_START" />
+
+                <category android:name="com.whu.faithfish.MY_CATEGORY" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--
+必须包括默认的category
+                否则不会找到
+                -->
             </intent-filter>
         </activity>
+        <activity android:name=".ListViewActivity"></activity>
     </application>
 
 </manifest>

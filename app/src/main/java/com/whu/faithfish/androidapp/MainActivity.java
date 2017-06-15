@@ -44,15 +44,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendMessage(View view){
-//        Intent intent = new Intent(this, SecondActivity.class);
-//        EditText editText = (EditText) findViewById(R.id.edit_message);
-//        String msg = editText.getText().toString();
-//        intent.putExtra(MSG_NAME,msg);
-//        startActivity(intent);
+        Intent intent = new Intent(this, ListViewActivity.class);
+        EditText editText = (EditText) findViewById(R.id.edit_message);
+        String msg = editText.getText().toString();
+        intent.putExtra(MSG_NAME,msg);
+        startActivity(intent);
 //        Intent intent = new Intent("com.whu.faithfish.ACTION_START");
 //        intent.addCategory("com.whu.faithfish.MY_CATEGORY");
 //        startActivity(intent);
-        Intent intent = new Intent(Intent.ACTION_DIAL,Uri.parse("tel:10086"));
-        startActivity(intent);
+//        Intent intent = new Intent(Intent.ACTION_DIAL,Uri.parse("tel:10086"));
+//        startActivity(intent);
     }
 }
