@@ -31,7 +31,8 @@
                 -->
             </intent-filter>
         </activity>
-        <activity android:name=".ListViewActivity"></activity>
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>
