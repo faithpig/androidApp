@@ -7,9 +7,11 @@ import android.widget.ListView;
 
 public class ListViewActivity extends AppCompatActivity {
 
-    private String[] data = {"apple","apple","bnana","apple","bnana","apple","bnana",
-            "apple","bnana","apple","bnana","apple","bnana","apple","bnana",
-            "apple","bnana","apple","bnana","apple","bnana","apple","bnana","apple","bnana"};
+    private String[] data = {"banana","cherry","grape","peach","pineapple",
+            "banana","cherry","grape","peach","pineapple"
+            ,"banana","cherry","grape","peach","pineapple"
+            ,"banana","cherry","grape","peach","pineapple"
+            ,"banana","cherry","grape","peach","pineapple"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
