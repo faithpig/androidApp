@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.whu.faithfish.androidapp">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,28 +14,27 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="first activity!">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:label="first activity!"></activity>
         <activity android:name=".SecondActivity" />
         <activity android:name=".ThirdActivity">
             <intent-filter>
                 <action android:name="com.whu.faithfish.ACTION_START" />
-
                 <category android:name="com.whu.faithfish.MY_CATEGORY" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <!--
-必须包括默认的category
-                否则不会找到
-                -->
+                <!--必须包括默认的category否则不会找到-->
             </intent-filter>
         </activity>
         <activity android:name=".ListViewActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity">
+        </activity>
+        <activity android:name=".DownLoadActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.whu.faithfish.Service.DownloadService" android:enabled="true"
+            android:exported="true"/>
     </application>
 
 </manifest>
